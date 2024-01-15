@@ -1,0 +1,50 @@
+{{define "gallery"}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Gallery</h1>
+      <hr />
+      <a href="/gallery?refresh=true">get new images</a>
+      <div class="images">
+        {{range .}}
+        <a href="/gallery/{{.Id}}">
+          <img
+            src="{{.Url}}"
+            alt="Cat Image {{.Id}}"
+            width="150px"
+            height="150px"
+          />
+        </a>
+      </div>
+      {{end}}
+    </div>
+  </body>
+</html>
+{{end}} {{define "image"}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Gallery</h1>
+      <hr />
+      <div class="image"><img src="{{.url}}" alt="Cat Image {{.id}}" /></div>
+      <a href="" class="button">download</a>
+    </div>
+  </body>
+</html>
+{{end}}

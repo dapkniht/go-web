@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>web-1</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello World</h1>
+      <p>hello {{.name}}</p>
+      <p>Your age is {{.age}}</p>
+      <div class="clock">
+        <p>current time:</p>
+        <p id="time"></p>
+      </div>
+      <hr />
+      <nav class="navbar">
+        <ul>
+          <li><a href="/about">about</a></li>
+          <li><a href="/gallery">gallery</a></li>
+          <li><a href="/setting">setting</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
+<script src="/static/script.js"></script>

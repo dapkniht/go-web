@@ -1,0 +1,95 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+  background-color: aliceblue;
+
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile {
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.contact {
+  text-align: justify;
+}
+
+.socmed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socmed {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
+}
+
+.socmed i {
+  font-size: 2.5rem;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+.navbar ul li a:hover {
+  color: salmon;
+}
+
+.images {
+  display: flex;
+  justify-content: start;
+}
+
+.images img {
+  border: 1px solid black;
+}
+
+.image {
+  overflow: hidden;
+}
+
+.image img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.button {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid;
+  line-height: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover {
+  background-color: rgba(94, 97, 100, 0.1);
+}
+
+.clock {
+  margin: 0 auto;
+  width: 200px;
+  border: 1px solid black;
+}
