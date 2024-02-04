@@ -3,6 +3,7 @@ package controller
 import (
 	"html/template"
 	"net/http"
+	"time"
 )
 
 var person = map[string]string{
@@ -25,6 +26,16 @@ func IndexHandler(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
+
+	cookie := http.Cookie{
+		Name:    "examplecookie",
+		Value:   "cookievalue",
+		Expires: time.Now().Add(24 * time.Hour),
+		Path:    "/",
+	}
+
+	// Menetapkan cookie di respons HTTP
+	http.SetCookie(w, &cookie)
 
 	if err := tmpl.Execute(w, person); err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)

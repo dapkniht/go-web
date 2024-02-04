@@ -57,10 +57,6 @@
   justify-content: start;
 }
 
-.images img {
-  border: 1px solid black;
-}
-
 .image {
   overflow: hidden;
 }
@@ -92,4 +88,80 @@
   margin: 0 auto;
   width: 200px;
   border: 1px solid black;
+}
+
+.common {
+  padding: 10px;
+  text-align: justify;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 4px 7px 12px -4px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 4px 7px 12px -4px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 4px 7px 12px -4px rgba(0, 0, 0, 0.65);
+}
+
+.common label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.common .input {
+  margin-bottom: 20px;
+}
+
+.common .input input[type="text"] {
+  width: 280px;
+  padding: 10px;
+}
+
+.common .button:hover {
+  cursor: pointer;
+}
+
+.login {
+  margin: 0 auto;
+  width: 350px;
+  padding: 20px;
+  text-align: justify;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 4px 7px 12px -4px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 4px 7px 12px -4px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 4px 7px 12px -4px rgba(0, 0, 0, 0.65);
+}
+
+.login label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login .input {
+  margin-bottom: 20px;
+}
+
+.login .input input[type="email"],
+.login .input input[type="password"] {
+  width: 90%;
+  height: 10px;
+  padding: 10px;
+}
+
+.login button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+.login button:hover {
+  background-color: rgba(94, 97, 100, 0.03);
+}
+
+.notify {
+  margin: 10px auto;
+  background-color: #f44336;
+  width: 350px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
 }

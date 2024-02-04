@@ -15,14 +15,16 @@
       <a href="/gallery?refresh=true">get new images</a>
       <div class="images">
         {{range .}}
-        <a href="/gallery/{{.Id}}">
-          <img
-            src="{{.Url}}"
-            alt="Cat Image {{.Id}}"
-            width="150px"
-            height="150px"
-          />
-        </a>
+        <div class="image">
+          <a href="/gallery/{{.Id}}">
+            <img
+              src="{{.Url}}"
+              alt="Cat Image {{.Id}}"
+              width="150px"
+              height="150px"
+            />
+          </a>
+        </div>
       </div>
       {{end}}
     </div>
